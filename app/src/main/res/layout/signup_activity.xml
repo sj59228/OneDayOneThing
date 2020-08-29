@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/constText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="아이디"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.20" />
+
+    <EditText
+        android:id="@+id/constEdit1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:maxLength="25"
+        android:singleLine="true"
+        android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789"
+
+        android:background="@drawable/edittext_border"
+        android:padding="7dp"
+        android:textSize="18dp"
+        app:layout_constraintHorizontal_weight="1"
+
+
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/buttonIdCheck"
+        app:layout_constraintTop_toBottomOf="@id/constText1"
+        />
+
+    <Button
+        android:id="@+id/buttonIdCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="중복 확인"
+        android:textSize="12dp"
+
+        app:layout_constraintBottom_toBottomOf="@id/constEdit1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/constEdit1" />
+
+    <TextView
+        android:id="@+id/constIdDetail1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="* 8자 이상, 영문 또는 숫자로 설정해주세요"
+        android:layout_marginTop="2dp"
+        android:textSize="12dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constEdit1"
+
+        />
+
+
+
+    <TextView
+        android:id="@+id/constText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="비밀번호"
+        android:textSize="18dp"
+        android:textStyle="bold"
+
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constIdDetail1" />
+
+    <EditText
+        android:id="@+id/constEdit2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_border"
+        android:padding="7dp"
+        android:layout_marginTop="5dp"
+        android:textSize="18dp"
+        android:maxLength="25"
+        android:singleLine="true"
+        android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constText2" />
+
+    <TextView
+        android:id="@+id/constPwDetail1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="* 8자 이상, 영문 또는 숫자로 설정해주세요"
+        android:layout_marginTop="2dp"
+        android:textSize="12dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constEdit2"
+
+        />
+
+    <!--    <ImageView-->
+    <!--        android:layout_width="16dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginRight="10dp"-->
+
+    <!--        app:layout_constraintRight_toRightOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="@id/constEdit2"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@id/constEdit2"-->
+
+    <!--        android:src="@drawable/ic_remove_red_eye_black_24dp"-->
+    <!--        />-->
+
+
+    <TextView
+        android:id="@+id/constText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="비밀번호 재확인"
+        android:textSize="18dp"
+        android:textStyle="bold"
+
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constPwDetail1" />
+
+    <EditText
+        android:id="@+id/constEdit3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_border"
+        android:padding="7dp"
+        android:textSize="18dp"
+        android:layout_marginTop="5dp"
+        android:maxLength="25"
+        android:singleLine="true"
+        android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constText3" />
+
+    <TextView
+        android:id="@+id/constPwDetail2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="* 비밀번호를 다시 입력해주세요"
+        android:textSize="12dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constEdit3"
+
+        />
+
+    <CheckBox
+        android:id="@+id/showPw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constPwDetail2" />
+
+    <TextView
+        android:id="@+id/constText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="비밀번호 표시"
+
+        app:layout_constraintBottom_toBottomOf="@id/showPw"
+        app:layout_constraintLeft_toRightOf="@id/showPw"
+        app:layout_constraintTop_toTopOf="@id/showPw" />
+
+
+    <Button
+        android:id="@+id/constButton1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:text="가입하기"
+        android:textSize="18dp"
+        android:textStyle="bold"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/showPw" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

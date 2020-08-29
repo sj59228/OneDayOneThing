@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "264431007909",
+    "firebase_url": "https://onedayonething-3677a.firebaseio.com",
+    "project_id": "onedayonething-3677a",
+    "storage_bucket": "onedayonething-3677a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:264431007909:android:ab3c7bc0d7edc921ad354c",
+        "android_client_info": {
+          "package_name": "com.hj.onedayonething"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "264431007909-qr98h5879vhi9a3un2bm44nbarp3i81a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hj.onedayonething",
+            "certificate_hash": "55cef6a21ebf516c1802678400f957db63963168"
+          }
+        },
+        {
+          "client_id": "264431007909-42d56d0476d1hto25l60cmv2uc179i5a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjPO7p19mloCyjwU1lnl44oXSnZh1-oZU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "264431007909-42d56d0476d1hto25l60cmv2uc179i5a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
